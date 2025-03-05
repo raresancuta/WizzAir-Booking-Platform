@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.zboruri_practic.Controller.TicketsFrom24JanController">
+   <children>
+      <TableView fx:id="ticketsFrom24JanTable" layoutX="67.0" layoutY="62.0" prefHeight="259.0" prefWidth="467.0">
+        <columns>
+          <TableColumn fx:id="flightIdTableColumn" prefWidth="154.0" text="Flight ID" />
+          <TableColumn fx:id="purchaseTimeTableColumn" prefWidth="142.0" text="Purchase Time" />
+            <TableColumn fx:id="usernameTableColumn" prefWidth="169.0" text="Client (username)" />
+        </columns>
+      </TableView>
+      <Label layoutX="67.0" layoutY="32.0" prefHeight="17.0" prefWidth="208.0" text="All tickets bought on 2024-01-24:" />
+   </children>
+</AnchorPane>

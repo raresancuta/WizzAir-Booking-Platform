@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.zboruri_practic.Controller.FlightsController">
+   <children>
+      <Label layoutX="25.0" layoutY="39.0" prefHeight="25.0" prefWidth="45.0" text="From : " />
+      <Label layoutX="268.0" layoutY="5.0" prefHeight="34.0" prefWidth="65.0" text="Fligths">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fromCombo" layoutX="70.0" layoutY="39.0" prefHeight="25.0" prefWidth="99.0" />
+      <Label layoutX="181.0" layoutY="39.0" prefHeight="25.0" prefWidth="45.0" text="To : " />
+      <ComboBox fx:id="toCombo" layoutX="211.0" layoutY="39.0" prefHeight="25.0" prefWidth="99.0" />
+      <Label layoutX="325.0" layoutY="39.0" prefHeight="25.0" prefWidth="81.0" text="Landing Date :" />
+      <DatePicker fx:id="dateCombo" layoutX="417.0" layoutY="39.0" prefHeight="25.0" prefWidth="160.0" />
+      <TableView fx:id="flightsTable" layoutX="25.0" layoutY="86.0" prefHeight="251.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="fromColumn" prefWidth="97.0" text="From" />
+          <TableColumn fx:id="toColumn" minWidth="4.0" prefWidth="95.0" text="To" />
+            <TableColumn fx:id="departureTimeColumn" prefWidth="117.0" text="Departure Time" />
+            <TableColumn fx:id="landingTimeColumn" prefWidth="108.0" text="Landing Time" />
+            <TableColumn fx:id="seatsColumn" prefWidth="136.0" text="Avalaible Seats" />
+        </columns>
+      </TableView>
+      <Button layoutX="497.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleBuyTicket" prefHeight="25.0" prefWidth="81.0" text="Buy" />
+   </children>
+</AnchorPane>

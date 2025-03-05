@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ubb.scs.map.zboruri_practic.Controller.ClientController">
+   <children>
+      <TableView fx:id="ticketsTable" layoutX="48.0" layoutY="94.0" prefHeight="200.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="flightIdTableColumn" prefWidth="238.0" text="Flight ID" />
+          <TableColumn fx:id="purchaseTimeTableColumn" prefWidth="264.0" text="Purchase Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="29.0" text="Hello, ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="clientNameLabel" layoutX="105.0" layoutY="25.0" prefHeight="31.0" prefWidth="208.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="66.0" text="Here are the tickets you bought:" />
+      <ButtonBar layoutX="48.0" layoutY="311.0" prefHeight="40.0" prefWidth="504.0">
+        <buttons>
+          <Button mnemonicParsing="false" onAction="#handleTicketsFrom24Jan" text="Tickets bought on 2024-01-24" />
+            <Button layoutX="135.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleFlights" prefHeight="25.0" text="Flights" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
